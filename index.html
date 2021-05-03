@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cm to inches converter</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="box-1">
+      <h1>
+        <span class="cm">Cm</span>
+        to
+        <span class="inch">inches</span>
+        converter
+      </h1>
+
+      <div class="box-2">
+        <input
+          type="number"
+          id="cm"
+          class="input"
+          oninput="calcInch()"
+          onchange="calcInch()"
+        />
+        <label id="label-cm" for="cm">cm</label>
+        <button class="btn-reverse button">Reverse</button>
+        <input
+          type="number"
+          id="inch"
+          class="input"
+          oninput="calcCm()"
+          onchange="calcCm()"
+          onlick="this.select()"
+        />
+        <label id="label-inch" for="inch">inch</label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
